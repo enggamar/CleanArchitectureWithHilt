@@ -1,0 +1,31 @@
+[versions]
+com-android-application = "8.1.0"
+kotlin-version = "1.8.0"
+kapt-version = "1.6.20"
+coreKtx = "1.9.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+activity = "1.8.2"
+constraintlayout = "2.1.4"
+diHiltVersion="2.44"
+retrofitVersion="2.9.0"
+converterGsonVersion = "2.9.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+diHilt={group="com.google.dagger" , name="hilt-android", version.ref="diHiltVersion"}
+diHiltCompiler={group="com.google.dagger" , name="hilt-android-compiler", version.ref="diHiltVersion"}
+retrofit={group="com.squareup.retrofit2", name="retrofit", version.ref="retrofitVersion"}
+gsonConverter={group="com.squareup.retrofit2", name="converter-gson", version.ref="converterGsonVersion"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "com-android-application" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin-version" }
+kotlinKapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt-version" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "diHiltVersion" }
+
+
